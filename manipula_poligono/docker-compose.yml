@@ -1,0 +1,19 @@
+services:
+  app:
+    build:
+      context: .
+    command: ["/workspace/scripts/entrypoint.sh"]
+    environment:
+      DISPLAY: ":99"
+      LIBGL_ALWAYS_SOFTWARE: "1"
+      MESA_LOADER_DRIVER_OVERRIDE: "llvmpipe"
+      GALLIUM_DRIVER: "llvmpipe"
+      PYTHONPATH: "/workspace"
+    ports:
+      - "6080:6080"
+      - "5900:5900"
+    stdin_open: true
+    tty: true
+    working_dir: /workspace
+    volumes:
+      - .:/workspace

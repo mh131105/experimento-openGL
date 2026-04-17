@@ -1,0 +1,1 @@
+"""OpenGL polygon application package."""

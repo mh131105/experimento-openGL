@@ -48,8 +48,3 @@ O desktop virtual exibirá a janela OpenGL em execução.
 - movimento com passo `0.05`;
 - paleta circular fixa com 8 cores;
 - espessura cíclica de `1.0` até `10.0`.
-
-## Artefatos de entrega
-
-- código-fonte comentado;
-- relatório em docs/relatorio_atv1cg.pdf;
